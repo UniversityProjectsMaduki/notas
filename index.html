@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h2 style="width: 100%; text-align: center;">Calculadora de Notas</h2>
+
+<div class="materia" id="materia1">
+    <h3>Matéria 1:</h3>
+    <label for="materia1conceitual">Nota de Missão Conceitual:</label><br>
+    <input type="number" id="materia1conceitual" name="materia1conceitual" placeholder="Insira a nota aqui"><br>
+    <label for="materia1checkpoints">Checkpoints:</label><br>
+    <input type="number" id="materia1checkpoints" name="materia1checkpoints" placeholder="Insira a nota aqui"><br>
+    <label for="materia1pratica">Missão Prática Entregue:</label><br>
+    <select id="materia1pratica" name="materia1pratica">
+      <option value="100">Sim</option>
+      <option value="0">Não</option>
+    </select><br>
+    <label for="materia1avaliacao">Avaliação da Missão Prática:</label><br>
+    <input type="number" id="materia1avaliacao" name="materia1avaliacao" placeholder="Insira a nota aqui"><br>
+    <button onclick="calcularNotaMateria('materia1')">Calcular Nota Matéria 1</button>
+    <p id="resultadoMateria1"></p>
+  </div>
+
+<div class="materia" id="materia2">
+    <h3>Matéria 2:</h3>
+    <label for="materia2conceitual">Nota de Missão Conceitual:</label><br>
+    <input type="number" id="materia2conceitual" name="materia2conceitual" placeholder="Insira a nota aqui"><br>
+    <label for="materia2checkpoints">Checkpoints:</label><br>
+    <input type="number" id="materia2checkpoints" name="materia2checkpoints" placeholder="Insira a nota aqui"><br>
+    <label for="materia2pratica">Missão Prática Entregue:</label><br>
+    <select id="materia2pratica" name="materia2pratica">
+      <option value="100">Sim</option>
+      <option value="0">Não</option>
+    </select><br>
+    <label for="materia2avaliacao">Avaliação da Missão Prática:</label><br>
+    <input type="number" id="materia2avaliacao" name="materia2avaliacao" placeholder="Insira a nota aqui"><br>
+    <button onclick="calcularNotaMateria('materia2')">Calcular Nota Matéria 2</button>
+    <p id="resultadoMateria2"></p>
+</div>
+
+<div class="materia" id="materia3">
+    <h3>Matéria 3:</h3>
+    <label for="materia3conceitual">Nota de Missão Conceitual:</label><br>
+    <input type="number" id="materia3conceitual" name="materia3conceitual" placeholder="Insira a nota aqui"><br>
+    <label for="materia3checkpoints">Checkpoints:</label><br>
+    <input type="number" id="materia3checkpoints" name="materia3checkpoints" placeholder="Insira a nota aqui"><br>
+    <label for="materia3pratica">Missão Prática Entregue:</label><br>
+    <select id="materia3pratica" name="materia3pratica">
+      <option value="100">Sim</option>
+      <option value="0">Não</option>
+    </select><br>
+    <label for="materia3avaliacao">Avaliação da Missão Prática:</label><br>
+    <input type="number" id="materia3avaliacao" name="materia3avaliacao" placeholder="Insira a nota aqui"><br>
+    <button onclick="calcularNotaMateria('materia3')">Calcular Nota Matéria 3</button>
+    <p id="resultadoMateria3"></p>
+</div>
+
+<div class="materia" id="materia4">
+    <h3>Matéria 4:</h3>
+    <label for="materia4conceitual">Nota de Missão Conceitual:</label><br>
+    <input type="number" id="materia4conceitual" name="materia4conceitual" placeholder="Insira a nota aqui"><br>
+    <label for="materia4checkpoints">Checkpoints:</label><br>
+    <input type="number" id="materia4checkpoints" name="materia4checkpoints" placeholder="Insira a nota aqui"><br>
+    <label for="materia4pratica">Missão Prática Entregue:</label><br>
+    <select id="materia4pratica" name="materia4pratica">
+      <option value="100">Sim</option>
+      <option value="0">Não</option>
+    </select><br>
+    <label for="materia4avaliacao">Avaliação da Missão Prática:</label><br>
+    <input type="number" id="materia4avaliacao" name="materia4avaliacao" placeholder="Insira a nota aqui"><br>
+    <button onclick="calcularNotaMateria('materia4')">Calcular Nota Matéria 4</button>
+    <p id="resultadoMateria4"></p>
+</div>
+
+<div class="materia" id="materia5">
+    <h3>Matéria 5:</h3>
+    <label for="materia5conceitual">Nota de Missão Conceitual:</label><br>
+    <input type="number" id="materia5conceitual" name="materia5conceitual" placeholder="Insira a nota aqui"><br>
+    <label for="materia5checkpoints">Checkpoints:</label><br>
+    <input type="number" id="materia5checkpoints" name="materia5checkpoints" placeholder="Insira a nota aqui"><br>
+    <label for="materia5pratica">Missão Prática Entregue:</label><br>
+    <select id="materia5pratica" name="materia5pratica">
+      <option value="100">Sim</option>
+      <option value="0">Não</option>
+    </select><br>
+    <label for="materia5avaliacao">Avaliação da Missão Prática:</label><br>
+    <input type="number" id="materia5avaliacao" name="materia5avaliacao" placeholder="Insira a nota aqui"><br>
+    <button onclick="calcularNotaMateria('materia5')">Calcular Nota Matéria 5</button>
+    <p id="resultadoMateria5"></p>
+</div>
+
+<br><br>
+<button style="margin: 20px auto; display: block; clear: both;" onclick="calcularNotaTotal()">Calcular Nota Total</button>
+<p id="resultadoTotal"></p>
+
+<script src="calculo.js"></script>
+
+</body>
+</html>
